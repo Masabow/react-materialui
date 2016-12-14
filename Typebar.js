@@ -30,17 +30,17 @@ export default class TabsExampleControlled extends React.Component {
   render() {
     return (
    <Tabs>
-    <Tab label="Item One" value="one">
+    <Tab label="冷蔵庫" value="one">
       <div>
-        <h2>Tab One</h2>
+        <h2></h2>
       </div>
     </Tab>
-    <Tab label="Item Two" value="two">
+    <Tab label="野菜室" value="two">
       <div>
         <h2>Tab Two</h2>
       </div>
     </Tab>
-    <Tab label="Item three" value="three">
+    <Tab label="冷凍庫" value="three">
       <div>
         <h2>Tab Three</h2>
       </div>
