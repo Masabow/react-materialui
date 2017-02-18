@@ -18,14 +18,11 @@ export default class CardContainer extends React.Component {
     render() {
         return (
             <Card>
-                <CardMedia
-                    overlay={
-                        <CardTitle title={<div><NameContainer name={this.props.name} onChangeName={this.props.onChangeName}/><VolumeContainer /></div>}>
-                        </CardTitle>
-                    }
-                    >
-                    <img src="gohan.jpg" />
-                </CardMedia>
+                <CardHeader
+                 avatar = "gohan.jpg"
+                >
+                </CardHeader>
+                <CardTitle title={<div><NameContainer name={this.props.name} onChangeName={this.props.onChangeName}/> </div>} />
             </Card>
         )
     }

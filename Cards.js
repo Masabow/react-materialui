@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { changeName } from './actions'
+import { changeName,addItem} from './actions'
 import CardList from './CardList'
 
 const mapStateToProps = (state) => {
@@ -13,9 +13,13 @@ const mapDispatchToProps = (dispatch) => {
     onChangeName: (id) => {
       console.log("change")
       dispatch(changeName(id))
-    }
+    },
+    onAddItem: (text) => {
+      dispatch(addItem(text));
+    } 
   }
 }
+
 
 const Cards = connect(
   mapStateToProps,

@@ -34,7 +34,12 @@ function item(state = initState, action) {
               return item
             })
           })
-          break;
+        case 'ADD_ITEM':
+          return Object.assign({}, state, {
+            items:[
+            ...state.items,{}
+            ]
+          })
         default:
           return state;
     }

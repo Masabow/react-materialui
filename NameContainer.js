@@ -6,9 +6,6 @@ import FontIcon from 'material-ui/FontIcon'
 import Slider from 'material-ui/Slider';
 
 export default class NameContainer extends React.Component {
-    textColor = {
-        color: white
-    }
 
     styles = {
         input: {
@@ -29,13 +26,13 @@ export default class NameContainer extends React.Component {
 
     render = () => (
         <div>
-            <div style={this.styles.input}><TextField onChange={this.handleChange} inputStyle={this.textColor} defaultValue={this.props.name} id='a' /></div>
+            <div style={this.styles.input}><TextField onChange={this.handleChange} defaultValue={this.props.name} id='a' /></div>
             <div style={this.styles.date}>
                 <span style={{ float: 'left' }}>
-                    <FontIcon className="material-icons" color={white}>today</FontIcon>
+                    <FontIcon className="material-icons" >today</FontIcon>
                 </span>
                 <span style={{ float: 'right' }}>
-                    <DatePicker id='a' inputStyle={this.textColor} defaultDate={this.props.lastDate} />
+                    <DatePicker id='a' defaultDate={this.props.lastDate} />
                 </span>
             </div>
             <div style={{ clear: 'both' }} />
